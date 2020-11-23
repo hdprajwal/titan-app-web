@@ -1,0 +1,39 @@
+{
+  "name": "titan-app-admin-web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "hd-prajwalgowdaw",
+  "scripts": {
+    "build:tailwind": "tailwindcss build styles/tailwind.css -o styles/tailwind.output.css",
+    "predev": "npm run build:tailwind",
+    "prebuild": "npm run build:tailwind",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p 8080"
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
+    "@apollo/react-ssr": "^3.1.5",
+    "antd": "^4.8.5",
+    "apollo-cache-inmemory": "^1.6.5",
+    "apollo-client": "^2.6.8",
+    "apollo-link-http": "^1.5.17",
+    "formik": "^2.2.5",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.3.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.11.0",
+    "react-select": "^3.1.1",
+    "yup": "^0.29.3"
+  },
+  "devDependencies": {
+    "postcss-flexbugs-fixes": "4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.7.4"
+  }
+}
